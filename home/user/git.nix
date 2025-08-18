@@ -7,8 +7,7 @@ in
     enable = true;
     userName = userName;
     userEmail = email;
-
-    config = {
+    extraConfig = {
       init = {
         defaultBranch = "main";
       };

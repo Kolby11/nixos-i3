@@ -5,6 +5,7 @@
     ./boot.nix
     ./gaming.nix
     ./hardware.nix
+    ./i3.nix
     ./i18n.nix
     ./networking.nix
     ./nixsettings.nix
@@ -19,7 +20,5 @@
     ./theme.nix
     ./users.nix
     ./virtualisation.nix
-
-    ./custom #Custom modules
   ];
 }
