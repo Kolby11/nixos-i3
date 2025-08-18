@@ -1,0 +1,9 @@
+
+# i3 config file (v4)
+#
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+
+include ~/.config/i3/exec.conf
+include ~/.config/i3/bind.conf
+include ~/.config/i3/window.conf
+include ~/.config/i3/catpuccin-macchiato
