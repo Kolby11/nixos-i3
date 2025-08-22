@@ -6,6 +6,7 @@
     home-manager
     btop
     git
+    killall
     vim
     neovim
     openssl
