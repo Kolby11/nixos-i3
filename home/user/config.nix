@@ -12,7 +12,7 @@ in
     ".config/swaylock".source = "${configDir}/swaylock";
     ".config/wlogout".source = "${configDir}/wlogout";
     ".config/btop".source = "${configDir}/btop";
-    ".config/wofi".source = "${configDir}/wofi";
+    ".config/rofi".source = "${configDir}/rofi";
     ".config/mako".source = "${configDir}/mako";
   };
 }

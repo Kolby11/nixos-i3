@@ -10,7 +10,7 @@
     swaylock-effects
     wlogout
     wl-clipboard
-    wofi
+    rofi
     lxqt.pcmanfm-qt
   ];
 }
