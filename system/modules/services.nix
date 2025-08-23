@@ -17,7 +17,7 @@
       windowManager.i3.enable = true;
       xkb = {
         layout = "us,sk";
-        options = "grp:alt_shift_toggle,caps:swapescape";
+        options = "grp:alt_shift_toggle";
       };
       # videoDrivers = [ "amdgpu" "virtualbox" ];
     };
