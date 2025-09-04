@@ -37,5 +37,8 @@
 
     # Music
     spotify
+
+    # Background
+    nitrogen
   ];
 }
