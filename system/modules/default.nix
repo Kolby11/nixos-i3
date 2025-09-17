@@ -15,6 +15,7 @@
     ./remote-desktop
     ./security.nix
     ./services.nix
+    ./stylix.nix
     ./sound.nix
     ./time.nix
     ./theme.nix

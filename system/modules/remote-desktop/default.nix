@@ -3,6 +3,6 @@
 {
   imports = [
     # ./wayvnc.nix
-    ./rustdesk.nix
+    # ./rustdesk.nix
   ];
 }
