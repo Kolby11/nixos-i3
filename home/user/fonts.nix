@@ -1,12 +1,23 @@
 { pkgs, ... }:
 
 {
-  fonts.fontconfig.enable = true;
-  # fonts.fontconfig.antialiasing = true;
-  # fonts.fontconfig.monospace = "Ubuntu Mono";
-  # home.packages = with pkgs; [
-  #   (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
-  # ];
+  home.packages = with pkgs; [
+    nerd-fonts.fira-code
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.ubuntu-mono
+  ];
+
+  fonts.fontconfig = {
+    enable = true;
+    # antialias = true;
+
+    defaultFonts = {
+      monospace = [
+        "FiraCode Nerd Font Mono"
+        "UbuntuMono Nerd Font Mono"
+      ];
+    };
+  };
 }
 
 
