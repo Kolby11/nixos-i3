@@ -1,21 +1,16 @@
 { config, pkgs, ... }:
 
 {
-  imports = [
-    # Import Stylix as a Home Manager module here
-    inputs.stylix.homeManagerModules.stylix
-  ];
-
   stylix = {
     enable = true;
-    image = ./home/themes/space_panels.png;
+    # image = ./home/themes/space_panels.png;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-mirage.yaml";
 
     cursor = {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Ice";
-      size = 24;
+      size = 20;
     };
 
     fonts = {
