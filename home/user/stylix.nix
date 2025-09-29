@@ -45,5 +45,10 @@
         name = "DejaVu Serif";
       };
     };
+
+    opacity = {
+      terminal = 0.9;
+      popups = 0.8;
+    };
   };
 }
