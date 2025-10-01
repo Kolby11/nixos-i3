@@ -32,6 +32,11 @@
       # videoDrivers = [ "amdgpu" "virtualbox" ];
     };
 
-    picom.enable = true;
+    picom = {
+      enable = true;
+      settings = {
+        corner-radius = 14;
+      };
+    };
   };
 }

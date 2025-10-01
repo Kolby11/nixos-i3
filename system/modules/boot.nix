@@ -2,9 +2,29 @@
 
 {
   boot.loader = {
-    systemd-boot.enable = true;
-    efi.canTouchEfiVariables = true;
     timeout = 5;
+
+    efi = {
+      efiSysMountPoint = "/boot";
+    };
+
+    grub = {
+      enable = true;
+      useOSProber = true;
+      copyKernels = true;
+      efiInstallAsRemovable = true;
+      efiSupport = true;
+      fsIdentifier = "label";
+      devices = [ "nodev" ];
+      extraEntries = "
+          menuentry 'Reboot' {
+            reboot
+          }
+          menuentry 'Poweroff' {
+            halt
+          }
+      ";
+    };
   };
 
   boot.tmp.cleanOnBoot = true;
