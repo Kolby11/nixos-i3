@@ -5,7 +5,7 @@
     polybar
     libnotify
     mako
-    kitty
+    rofi
     swayidle
     swaylock-effects
     wlogout

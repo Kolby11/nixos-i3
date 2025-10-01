@@ -42,10 +42,6 @@
       };
     };
 
-    rofi = {
-      enable = true;
-    };
-
     firefox = {
       enable = true;
       # profiles.mato = {

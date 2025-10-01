@@ -5,7 +5,7 @@
     virtualbox = {
       guest = {
         enable = true;
-	dragAndDrop = true;
+	      dragAndDrop = true;
       };
     };
   };

@@ -13,7 +13,6 @@
     openssl.dev
     pkg-config
     wget
-    nwg-displays
   ];
 }
 

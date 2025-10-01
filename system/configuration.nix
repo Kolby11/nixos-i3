@@ -3,7 +3,8 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./modules 
+    ./modules
+    ./desktops
   ];
 
   system.stateVersion = "25.05"; 
