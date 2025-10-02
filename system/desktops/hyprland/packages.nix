@@ -2,10 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    polybar
-    libnotify
-    mako
-    rofi
+    waybar
     swayidle
     swaylock-effects
     wlogout
