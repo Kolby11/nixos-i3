@@ -15,8 +15,6 @@
       dedicatedServer.openFirewall = true;
     };
 
-    i3lock.enable = true;
-
     gnupg = {
       agent = {
         enable = true;

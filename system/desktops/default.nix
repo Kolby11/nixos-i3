@@ -3,7 +3,7 @@
 {
   imports = [
     ./i3
-    # ./hyprland
+    ./hyprland
   ];
 }
 
