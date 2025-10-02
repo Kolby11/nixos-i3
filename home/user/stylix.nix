@@ -8,20 +8,20 @@
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-mirage.yaml";
     base16Scheme = {
       base00 = "#0c0c1c"; #06060e
-      base01 = "#121229"; #0d0c1b
-      base02 = "#131229";
+      base01 = "#111021"; #0d0c1b
+      base02 = "#19172c"; #131229
       base03 = "#9796a4";
       base04 = "#a1a1ad";
-      base05 = "#8380c6"; #b68d5d
+      base05 = "#8380c6";
       base06 = "#d7d7ed";
       base07 = "#f2f2f9";
-      base08 = "#605db6";
-      base09 = "#b3b65d";
+      base08 = "#b6605d";
+      base09 = "#b68d5d";
       base0A = "#5db3b6";
-      base0B = "#b6605d";
-      base0C = "#87b65d";
+      base0B = "#87b65d";
+      base0C = "#b3b65d";
       base0D = "#8380c6";
-      base0E = "#b68d5d"; #b0aedb
+      base0E = "#605db6"; #b0aedb
       base0F = "#5d87b6";
     };
 
