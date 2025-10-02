@@ -3,11 +3,6 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
-include ~/.config/i3/exec.conf
-include ~/.config/i3/bind.conf
-include ~/.config/i3/window.conf
-include ~/.config/i3/catpuccin-macchiato
-
 # THEME
 set $rosewater #f4dbd6
 set $flamingo #f0c6c6

@@ -6,7 +6,7 @@
         # image = ./.config/wallpaper.jpg;
         polarity = "dark";
 
-        base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-dark.yaml";
+        base16Scheme = "${pkgs.base16-schemes}/share/themes/grayscale-light.yaml";
         #   base16Scheme = {
         #     base00 = "";
         #     base01 = "";
