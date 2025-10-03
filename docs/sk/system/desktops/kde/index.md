@@ -1,0 +1,3 @@
+# KDE konfigurácia
+
+Coming soon...

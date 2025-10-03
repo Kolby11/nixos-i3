@@ -1,0 +1,3 @@
+# Používateľská konfigurácia
+
+Coming soon...

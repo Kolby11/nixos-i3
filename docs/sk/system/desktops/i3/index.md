@@ -1,0 +1,3 @@
+# i3 konfigurácia
+
+Coming soon...

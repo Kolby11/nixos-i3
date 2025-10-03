@@ -1,0 +1,3 @@
+# Gnome konfigurácia
+
+Coming soon...

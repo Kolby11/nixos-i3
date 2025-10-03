@@ -1,0 +1,3 @@
+# Hyprland configuration
+
+Coming soon...
