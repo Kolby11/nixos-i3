@@ -17,6 +17,8 @@
         efiSupport = true;
         fsIdentifier = "label";
         devices = [ "nodev" ];
+        gfxmodeEfi = "1920x1080";
+        gfxpayloadBios = "keep";
         extraEntries = "
             menuentry 'Reboot' {
               reboot
