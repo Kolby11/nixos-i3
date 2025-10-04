@@ -37,11 +37,24 @@
     };
 
     homeConfigurations = {
+       kolby = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        modules = [
+          stylix.homeModules.stylix 
+          ./home/kolby ];
+        extraSpecialArgs = {
+          inherit pkgs-unstable;
+          inherit inputs;
+          context = self;
+          runtimeRoot = "/home/kolby/.config";
+          hm = home-manager.lib.hm;
+        };
+      };
       mato = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [
           stylix.homeModules.stylix 
-          ./home ];
+          ./home/mato ];
         extraSpecialArgs = {
           inherit pkgs-unstable;
           inherit inputs;
