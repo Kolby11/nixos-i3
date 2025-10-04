@@ -5,13 +5,53 @@ export default defineConfig({
   rewrites: {
     'en/:path*': ':path*',
   },
+  themeConfig: {
+    search: {
+      provider: "local",
+      options: {
+        async _render(src, env, md) {
+          const html = await md.renderAsync(src, env)
+          if (env.relativePath.includes('LICENSE.md')) return ''
+          return html
+        },
+        locales: {
+          sk: {
+            translations: {
+              button: {
+                buttonText: 'Vyhľadávať',
+                buttonAriaLabel: 'Vyhľadávať'
+              },
+              modal: {
+                displayDetails: '显示详细列表',
+                resetButtonTitle: '重置搜索',
+                backButtonTitle: '关闭搜索',
+                noResultsText: 'Źiadne výsledky pre',
+                footer: {
+                  selectText: 'pre vyhľadávanie',
+                  selectKeyAriaLabel: 'enter',
+                  navigateText: 'pre navigovanie',
+                  navigateUpKeyAriaLabel: 'šípka hore',
+                  navigateDownKeyAriaLabel: 'šípka dole',
+                  closeText: 'pre zavrieie',
+                  closeKeyAriaLabel: 'esc'
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/Kolby11/nixos-i3', ariaLabel: 'Source code' }
+    ]
+  },
   locales: {
     root: {
       label: "English",
       lang: "en",
       title: "Kolby`s NixOS Multidesk",
       description: "Kolby`s NixOS multidesktop environment",
-       themeConfig: {
+      themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
           { text: 'Home', link: '/' },
@@ -31,7 +71,12 @@ export default defineConfig({
           { text: "NixOS configuration", collapsed: false, items: [
             {
               items: [
-                { text: 'System configuration', link: '/system/' },
+                { text: 'System configuration', collapsed: true, items: [
+                  { text: 'Modules', link: '/system/modules/' },
+                  { text: 'Boot', link: '/system/modules/boot' },
+                  { text: 'Display manager', link: '/system/modules/display-manager' },
+                  { text: 'i18n', link: '/system/modules/i18n' },
+                  ] },
                 { text: 'i3', link: '/system/desktops/i3/' },
                 { text: 'Hyprland', link: '/system/desktops/hyprland/' },
                 { text: 'Gnome', link: '/system/desktops/gnome/' },
@@ -61,10 +106,6 @@ export default defineConfig({
                 } ]
             }]
           }
-        ],
-
-        socialLinks: [
-          { icon: 'github', link: 'https://github.com/Kolby11/nixos-i3', ariaLabel: 'source' }
         ]
       }
     },
@@ -73,7 +114,7 @@ export default defineConfig({
       lang: "sk",
       title: "Kolbyho NixOS Multidesk",
       description: "Kolbyho NixOS viac-desktopové prostredie konfigurácia",
-       themeConfig: {
+      themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
           { text: 'Domov', link: '/sk/' },
@@ -92,7 +133,12 @@ export default defineConfig({
           { text: "NixOS konfigurácia", collapsed: false, items: [
             {
               items: [
-                { text: 'Systémová konfigurácia', link: '/sk/system/' },
+                { text: 'Systémová konfigurácia', collapsed: true, items: [
+                  { text: 'Moduly', link: '/sk/system/modules/' },
+                  { text: 'Boot', link: '/sk/system/modules/boot' },
+                  { text: 'Display manager', link: '/sk/system/modules/display-manager' },
+                  { text: 'i18n', link: '/sk/system/modules/i18n' },
+                  ] },
                 { text: 'i3', link: '/sk/system/desktops/i3/' },
                 { text: 'Hyprland', link: '/sk/system/desktops/hyprland/' },
                 { text: 'Gnome', link: '/sk/system/desktops/gnome/' },
@@ -125,7 +171,7 @@ export default defineConfig({
         ],
 
         socialLinks: [
-          { icon: 'github', link: 'https://github.com/Kolby11/nixos-i3', ariaLabel: 'zdroj' }
+          { icon: 'github', link: 'https://github.com/Kolby11/nixos-i3', ariaLabel: 'Zdrojový kód' }
         ]
       }
     }

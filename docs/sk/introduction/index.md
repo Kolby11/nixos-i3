@@ -6,4 +6,4 @@ Táto webová stránka slúži ako dokumentácia môjho každodenného [NixOS](h
 
 # Licencia
 
-Pozri [licenčný súbor repozitáru](/LICENSE.md).
+Pozri [licenčný súbor repozitáru](/sk/LICENSE.md).
